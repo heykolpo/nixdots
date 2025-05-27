@@ -1,0 +1,150 @@
+@use "sass:color";
+// @use "./widget/Applauncher.scss";
+@use "sass:string";
+
+@function gtkalpha($c, $a) {
+    @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+
+$bg1: #161a1d;
+$bg2: #1c2023;
+$bg3: #272b2e;
+$fg1: #c7ccd1;
+$fg2: #adb3ba;
+$fg3: #565a5d;
+$tx1: #c7ccd1;
+$tx2: #989898;
+$tx3: #606060;
+$ac1: #95aec7;
+$hover: #272b2e;
+$clicked: #565a5d;
+$border: none;
+$font-size: 10px;
+$border-radius: 4px;
+$font: "JetBrainsMono NF";
+$font-weight: normal;
+
+window {
+  font-family: $font;
+  background: transparent;
+  border: none;
+  font-size: $font-size;
+}
+
+.Bar {
+  background: $bg1; 
+  font-size: $font-size;
+}
+
+button {
+    background-color: transparent;
+    // margin: 0px;
+    padding: 4px 8px;
+    border-radius: 0px;
+    color: $tx1;
+    transition: all 250ms;
+    font-weight: $font-weight;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+  background: $hover;
+}
+
+button:active {
+  background: $clicked;
+  color: $bg1;
+  transition: background 0ms;
+}
+
+.icon-container {
+  min-width: 18px;
+  min-height: 18px;
+  // padding:10px;
+  // background: $bg2;
+}
+
+.icon {
+  font-size: 16px;
+  // color: $fg1;
+}
+battery {
+  background: #fafaaf;
+}
+.menu {
+  font-size: $font-size;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+.widget-stack {
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+}
+.widget {
+  background: $bg1;
+  min-width: 98px;
+  min-height: 98px;
+  padding: 16px;
+  border: $border;
+  border-radius: 4px;
+  box-shadow: 
+    0 4px 4px gtkalpha(black, 0.25);
+    // 0 8px 16px gtkalpha(black, 0.25),
+    // 0 30px 60px gtkalpha(black, 0.3); 
+
+  .title {
+    font-size: 28px;
+    font-weight: 400;
+    color: $tx1;
+  }
+
+  .subtitle {
+    color: $tx2;
+  }
+}
+
+.widget.main {
+  background: $fg1;
+
+  .title {
+    color: $bg1;
+  }
+
+  .subtitle {
+    color: $bg2;
+  }
+}
+
+.Bar {
+  background: $bg1;
+
+  .workspaces {
+
+    button {
+      // background: transparent;
+      padding: 0 8px;
+      color: $tx2;
+    }
+
+
+
+    .focused {
+      background: $fg2;
+      color: $bg1;
+      // font-weight: bold;
+    }
+    .focused:hover {
+      background: $hover;
+      color: $fg1;
+    }
+  }
+}
+
