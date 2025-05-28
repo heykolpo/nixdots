@@ -9,10 +9,11 @@
     inputs.nix4nvchad.homeManagerModules.default
     ./hyprland
     ./ags
+    ./rofi
+    ./neovim
     ./alacritty.nix
     ./git.nix
     ./gtk.nix
-    ./nvchad.nix
     ./packages.nix
     ./ranger.nix
     ./syncthing.nix

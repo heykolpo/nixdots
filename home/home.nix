@@ -11,7 +11,11 @@
     EDITOR = "nvim";
   };
  
- imports = [ ./default.nix ];
+  imports = [ ./default.nix ];
+
+  home.file = {
+    # ".config/rofi".source = ./rofi;
+  };
 
   programs.home-manager.enable = true;
 }

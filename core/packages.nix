@@ -6,7 +6,7 @@
   programs.zsh.enable = true;
   programs.firefox.enable = true;
   programs.obs-studio.enable = true;
-  programs.hyprland.enable = true;
+  # programs.hyprland.enable = true;
   
   environment.systemPackages = with pkgs; [
     hyprpolkitagent
@@ -19,7 +19,6 @@
     nemo
     gnome-tweaks
     nixfmt-tree
-    rofi-wayland
     grimblast
     kitty
     ibm-plex

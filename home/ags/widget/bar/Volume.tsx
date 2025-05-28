@@ -17,13 +17,13 @@ export default function VolumeModule() {
                 return `${Math.round(v * 100).toString()}%`
             })
         }
-        onClicked={() => 
-            exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+")
-        }
-        //onScroll={
-        //    (_, { delta_y }) => {
-        //    //if (event.delta_y < 0) exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+");
-        //    if (event.delta_y > 0) exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-");
-        //}}
+        // onClicked={() => 
+        //     exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+")
+        // }
+        onScroll={
+           (_, { delta_y }) => {
+           //if (event.delta_y < 0) exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+");
+           if (event.delta_y > 0) exec("wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-");
+        }}
         />
 }
