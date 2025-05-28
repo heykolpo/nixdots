@@ -33,7 +33,7 @@
         "ags run"
         "systemctl --user start hyprpolkitagent"
         "/usr/bin/kdeconnectd & disown"
-        "hyprctl setcursor Bibata-Modern 20"
+        "hyprctl setcursor Bibata-Modern 16"
       ];
 
       general = {
