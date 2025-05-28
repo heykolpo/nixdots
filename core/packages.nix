@@ -31,6 +31,7 @@
     inkscape
     gpu-screen-recorder-gtk
     ffmpeg
+    alejandra
     # pkgs
   ];
 }

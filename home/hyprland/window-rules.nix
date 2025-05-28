@@ -1,8 +1,9 @@
-{ config, pkgs, ... }:
-
 {
-  wayland.windowManager.hyprland.settings =  {
-
+  config,
+  pkgs,
+  ...
+}: {
+  wayland.windowManager.hyprland.settings = {
     workspace = [
       "w[v1]s[false], gapsout:0, gapsin:0, border:false, rounding:0"
       "f[1]s[false], gapsout:0, gapsin:0, border:false, rounding:0"

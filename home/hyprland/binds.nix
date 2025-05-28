@@ -1,12 +1,11 @@
-
-{ config, pkgs, ... }:
-
-let
-  mainMod = "SUPER";
-in
 {
-  wayland.windowManager.hyprland.settings =  {
-
+  config,
+  pkgs,
+  ...
+}: let
+  mainMod = "SUPER";
+in {
+  wayland.windowManager.hyprland.settings = {
     bind = [
       "${mainMod}, T, exec, alacritty"
       "${mainMod}, Q, killactive,"
@@ -72,4 +71,3 @@ in
     ];
   };
 }
-

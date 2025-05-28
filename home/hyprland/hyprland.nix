@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     grimblast
     wl-clipboard
@@ -23,18 +25,16 @@
       variables = ["--all"];
     };
 
-    settings =  {
-
-      monitor = [ ",highres,auto,1" ];
+    settings = {
+      monitor = [",highres,auto,1"];
 
       "exec-once" = [
         "hyprpaper"
-        "ags run -d ~/.nix/ags/"
+        "ags run"
         "systemctl --user start hyprpolkitagent"
         "/usr/bin/kdeconnectd & disown"
         "hyprctl setcursor Bibata-Modern 20"
       ];
-
 
       general = {
         gaps_in = 4;
@@ -50,7 +50,7 @@
       };
 
       decoration = {
-        rounding = 4;
+        rounding = 2;
         active_opacity = 1.0;
         inactive_opacity = 1.0;
 
@@ -108,8 +108,7 @@
         kb_options = "compose:ralt";
         follow_mouse = 1;
         sensitivity = 0.5;
-        
-        
+
         touchpad = {
           natural_scroll = true;
         };
@@ -129,7 +128,6 @@
       #   "suppressevent maximize, class:.*"
       # ];
 
-
       cursor = {
         sync_gsettings_theme = true;
         no_hardware_cursors = 2; # change to 1 if want to disable
@@ -137,8 +135,8 @@
         warp_on_change_workspace = 2;
         no_warps = true;
       };
-      
-      env = [ 
+
+      env = [
         "NIXOS_OZONE_WL, 1"
         "NIXPKGS_ALLOW_UNFREE, 1"
         "XDG_CURRENT_DESKTOP, Hyprland"

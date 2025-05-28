@@ -8,7 +8,7 @@
   home.stateVersion = "24.05";
 
   home.sessionVariables = {
-    EDITOR = "neovim";
+    EDITOR = "nvim";
   };
  
  imports = [ ./default.nix ];
