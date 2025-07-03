@@ -1,4 +1,5 @@
 import { Astal, Gdk, Gtk, Widget } from "astal/gtk3"
+import "../../../style.scss"
 
 type TileProps = 
     Pick<Widget.ButtonProps, "onClicked">

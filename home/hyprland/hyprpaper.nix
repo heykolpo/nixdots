@@ -6,8 +6,8 @@
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = ["/home/kolpo/Pictures/background"];
-      wallpaper = [", /home/kolpo/Pictures/background"];
+      preload = ["/home/kolpo/Pictures/solid.png"];
+      wallpaper = [", /home/kolpo/Pictures/solid.png"];
     };
   };
 }

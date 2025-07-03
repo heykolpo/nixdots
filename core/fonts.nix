@@ -5,7 +5,7 @@
     subpixel.rgba = "rgb";
     defaultFonts.sansSerif = [
       "Inter"
-      "Noto Sans"
+      "Noto Sans Bengali"
     ];
   };
 

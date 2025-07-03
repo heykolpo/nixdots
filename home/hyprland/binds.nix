@@ -22,7 +22,7 @@ in {
       "${mainMod}, S, exec, grimblast copysave area ~/Pictures/Screenshots"
       "${mainMod}, C, exec, telegram-desktop"
       "${mainMod}, W, exec, pkill js"
-      "${mainMod}+Shift, W, exec, pkill js ; ags run"
+      "${mainMod}+Shift, W, exec, pkill js ; ags run -d ~/.ags-alpha"
       "${mainMod}, O, exec, obsidian"
       "${mainMod}, Left, movefocus, l"
       "${mainMod}, H, movefocus, l"

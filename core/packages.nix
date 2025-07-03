@@ -6,7 +6,7 @@
   programs.zsh.enable = true;
   programs.firefox.enable = true;
   programs.obs-studio.enable = true;
-  # programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
   
   environment.systemPackages = with pkgs; [
     hyprpolkitagent
@@ -16,7 +16,9 @@
     noto-fonts
     telegram-desktop
     home-manager
+    kdePackages.plasma-workspace
     nemo
+    brightnessctl
     gnome-tweaks
     nixfmt-tree
     grimblast

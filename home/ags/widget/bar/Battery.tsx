@@ -2,6 +2,7 @@ import { App, Astal, Gtk, Gdk } from "astal/gtk3"
 import { Variable, GLib, bind } from "astal"
 import Battery from "gi://AstalBattery"
 import Module from "./components/Module.tsx"
+import BatteryMenu from "../popovers/BatteryMenu.tsx"
 
 const bat = Battery.get_default()
 const batteryPercentage = bind(bat, "percentage").as((p) => p * 100 + "%")
@@ -17,5 +18,5 @@ export default function BatteryModule() {
         className="battery"
         icon="󰁿"
         label={batteryPercentage}
-        onClicked={() => {console.log(charging)}}/>
+        onClicked={BatteryMenu}/>
 }

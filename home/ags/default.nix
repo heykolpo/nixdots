@@ -13,6 +13,7 @@
       inputs.ags.packages.${pkgs.system}.hyprland
       inputs.ags.packages.${pkgs.system}.wireplumber
       nerd-fonts.jetbrains-mono
+      karla
     ];
   };
 

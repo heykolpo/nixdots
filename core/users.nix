@@ -19,4 +19,15 @@
     ];
     shell = pkgs.zsh;
   };
+
+  users.users.user1 = {
+    isNormalUser = true;
+    description = "user1";
+    extraGroups = [ "networkmanager" "wheel" ];
+    home = "/home/user1";
+    packages = with pkgs; [
+      zsh
+    ];
+    shell = pkgs.zsh;
+  };
 }

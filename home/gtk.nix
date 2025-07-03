@@ -23,7 +23,7 @@
     };
 
     font = {
-        name = "IBM Plex Sans";
+        name = "Adwaita Sans";
         size = 10;
     };
   };

@@ -9,5 +9,6 @@
     neofetch
     hyprpaper
     inputs.ags.packages.${pkgs.system}.io
+    karla
   ];
 }

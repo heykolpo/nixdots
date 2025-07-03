@@ -44,7 +44,7 @@
         "col.inactive_border" = "rgba(303437ff)";
         resize_on_border = true;
         allow_tearing = false;
-        layout = "dwindled";
+        layout = "dwindle";
         no_border_on_floating = false;
         hover_icon_on_border = true;
       };

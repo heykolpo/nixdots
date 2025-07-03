@@ -13,7 +13,7 @@ export default function Bar(monitor: Gdk.Monitor) {
         className="Bar"
         name="bar"
         namespace="bar"
-        anchor={Astal.WindowAnchor.TOP | Astal.WindowAnchor.LEFT | Astal.WindowAnchor.RIGHT}
+        anchor={Astal.WindowAnchor.BOTTOM | Astal.WindowAnchor.LEFT | Astal.WindowAnchor.RIGHT}
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
         keymode={Astal.Keymode.ON_DEMAND}>
 

@@ -13,6 +13,7 @@
     ./packages.nix
     ./security.nix
     ./services.nix
+    ./ssh.nix
     ./system.nix
     ./users.nix
     ./xserver.nix
