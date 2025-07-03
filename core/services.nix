@@ -2,6 +2,7 @@
 
 {
   services = {
+    power-profiles-daemon.enable = true;
     printing.enable = true;
     pulseaudio.enable = false;
     # security.rtkit.enable = true;
